@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> David Wells - <%= @item[:title] %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <link rel="syntax" type="text/css" href="/syntax.css" media="screen">
+    <meta name="generator" content="nanoc 3.2.0">
+    <!-- <script type="text/x-mathjax-config"> -->
+    <!--   MathJax.Hub.Confing({ -->
+    <!--   tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]} -->
+    <!--   }); -->
+    <!-- </script> -->
+    <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div id="main">
+<!--add in the actual page content.-->
+      <%= yield %>
+      <br><br><br><br>
+    </div>
+    <div id="sidebar">
+      <h2>This Site</h2>
+      <%= create_inner_links %>
+      <h2>Virginia Tech</h2>
+      <ul>
+        <a href="http://www.vt.edu">Home</a><br>
+        <a href="http://www.math.vt.edu">Mathematics Dept.</a><br>
+        <a href="http://www.icam.vt.edu/">ICAM</a><br>
+      </ul>
+    </div>
+  </body>
+</html>

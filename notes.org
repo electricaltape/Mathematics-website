@@ -1,0 +1,36 @@
+* Overview
+  I don't understand web technology. This is a brief overview of the nanoc
+  tutorial.
+
+  *convention over configuration* - rely on default settings and default
+  conventions to avoid writing a lot of extraneous code.
+** Files in nanoc
+*** config.yaml
+    primary configuration file for the web site.
+
+    *data source* - defines where data is retrieved from to create the web page
+*** Rakefile
+    rake tasks (like make, but all ruby-tastic)
+** Directories in nanoc
+*** content
+    articles, pages, stylesheets, images - what will be compiled and turned in
+    to a website.
+*** layout
+    layouts and organizational information
+*** lib
+    custom ruby code, extra libraries
+*** output
+    'compiled' website.
+* Pradigm of Usage
+** Items
+   + 'basic building-blocks' - contains metadata and content.
+   + hierarchical structure, like the organization of the *content* folder
+   +
+** HTML pages
+   Nanoc fills in the remaining HTML for us.
+   In particular - /*Each page is translated to HTML (minus heading) and then
+   pasted in to the layout file where the embedded <%= yield %> is.*/
+** Embeded Ruby
+   Largely procedural - if some condition met, add text.
+   /*Nanoc's specialty is embedding ruby in a bunch of non-HTML markup
+   languages, running the ruby, and then translating the result to HTML.*/

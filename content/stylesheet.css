@@ -1,0 +1,146 @@
+* {
+  margin-right:0;
+  padding: 0;
+
+  font-family:  Palatino, 'Palatino Linotype',Times, Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+body {
+  background:#303030;
+  color:#e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*some sort of description of the links.*/
+a:link,
+a:visited {
+  color: #b0c4de;
+}
+
+a:hover {
+  color: #f90;
+}
+
+#main { /*position of main block of text.*/
+  position: absolute;
+
+  top: 40px;
+  left: 280px;
+  padding: 20px 20px 0 0;
+
+  width: 500px;
+}
+
+#main h1 { /*main heading.*/
+  font-size: 40px;
+  font-weight: normal;
+
+  line-height: 40px;
+
+  letter-spacing: 1px;
+}
+
+#main p { /*main paragraph.*/
+  margin: 20px 0;
+
+  font-size: 18px;
+
+  line-height: 20px;
+}
+
+#main ul, #main ol { /*spacing in the bullets in the main section.*/
+  margin: 20px;
+}
+
+#main li { /*size of bullets*/
+  font-size: 18px;
+
+  line-height: 20px;
+}
+
+#main ul li { /*shape of bullets*/
+  list-style-type: square;
+}
+
+#sidebar { /*description of sidebar.*/
+  position: absolute;
+
+  top: 40px;
+  left: 20px;
+  width: 200px;
+
+  padding: 20px 20px 0 0;
+
+  border-right: 1px solid #ccc;
+
+  text-align: right;
+}
+
+#sidebar h2 { /*header in the sidebar.*/
+  text-transform: uppercase;
+
+  font-size: 18px;
+
+  color: #e3e3e3;
+
+  letter-spacing: 1px;
+
+  line-height: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+
+  margin: 20px 0; /* spacing on bar headings? */
+}
+
+#sidebar li { /*links in side bar*/
+  font-size: 14px;
+
+  line-height: 20px;
+}
+
+/* test: add in the syntax highlighting */
+
+code {
+  background-color: #132323;
+  border: 1px solid black;
+  font-family: 'Courier New', 'Terminal', monospace;
+  color: #E6E0DB;
+  padding: 3px 5px;
+  overflow: auto;
+  font-size: 14px;
+  display: block;
+  border: 1px solid #bebab0;
+}
+code pre {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: 'Courier New', 'Terminal', monospace;
+}
+/*THIS IS AN ABOMINATION I AM SO SORRY*/
+.an { font-size: 14px;color:#E7BE69; font-family: 'Courier New', 'Terminal', monospace;} /* html attribute */
+.comment { font-size: 14px;color:#BC9358; font-family: 'Courier New', 'Terminal', monospace;} /* comment */
+.delimiter { font-size: 14px;color:#509E4F; font-family: 'Courier New', 'Terminal', monospace;} /* escaped character */
+.class { font-size: 14px;color:#FFF; font-family: 'Courier New', 'Terminal', monospace;} /* class */
+.constant { font-size: 14px;color:#FFF; font-family: 'Courier New', 'Terminal', monospace;} /* constant */
+.float { font-size: 14px;color:#A4C260; font-family: 'Courier New', 'Terminal', monospace;} /* float */
+.function { font-size: 14px;color:#FFC56D; font-family: 'Courier New', 'Terminal', monospace;} /* function */
+.global-variable { font-size: 14px;color:#D0CFFE; font-family: 'Courier New', 'Terminal', monospace;} /* global variable */
+.integer { font-size: 14px;color:#A4C260; font-family: 'Courier New', 'Terminal', monospace;} /* integer */
+.inline-code { font-size: 14px;background:#151515; font-family: 'Courier New', 'Terminal', monospace;} /* inline code */
+.instance-variable { font-size: 14px;color:#D0CFFE; font-family: 'Courier New', 'Terminal', monospace;} /* instance variable */
+.doctype { font-size: 14px;color:#E7BE69; font-family: 'Courier New', 'Terminal', monospace;} /* doctype */
+.keyword { font-size: 14px;color:#CB7832; font-family: 'Courier New', 'Terminal', monospace;} /* keyword */
+.regex { font-size: 14px;color:#A4C260; font-family: 'Courier New', 'Terminal', monospace;} /* regex */
+.string { font-size: 14px;color:#A4C260; font-family: 'Courier New',
+  'Terminal', monospace;} /* string */
+.content { font-size: 14px;color:#A4C260; font-family: 'Courier New', 'Terminal', monospace;} /* string */
+.symbol { font-size: 14px;color:#6C9CBD; font-family: 'Courier New', 'Terminal', monospace;} /* symbol */
+.ta { font-size: 14px;color:#E7BE69; font-family: 'Courier New', 'Terminal', monospace;} /* html tag */
+.boolean { font-size: 14px;color:#6C9CBD; font-family: 'Courier New', 'Terminal', monospace;} /* boolean */
