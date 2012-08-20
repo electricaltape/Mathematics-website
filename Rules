@@ -13,12 +13,14 @@
 #   “content/about.html”). To select all children, grandchildren, … of an
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
+# rename the root
+drwells_root = 'http://www.math.vt.edu/people/drwells/'
 
 compile 'default' do
   filter :erb
 end
 
-compile '/externallinks' do
+compile '/externallinks/' do
   filter :erb
   filter :kramdown
   filter :colorize_syntax,
